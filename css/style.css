@@ -1,0 +1,411 @@
+/* root var */
+
+:root {
+
+    /* Font family */
+    --font-base: "Josefin Sans", sans-serif;
+
+    /* Font weight */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Font size */
+    --Font-size: 18px;
+    --font-size: 12px;
+
+    /* Primary Colors */
+    --blue-500: hsl(220, 98%, 61%);
+    --check-gradient: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+    /* Dark Theme Colors */
+    --navy-950: hsl(235, 21%, 11%);
+    --navy-900: hsl(235, 24%, 19%);
+    --purple-300: hsl(234, 39%, 85%);
+    --purple-100: hsl(236, 33%, 92%);
+    /* hover */
+    --purple-600: hsl(235, 16%, 43%);
+    --purple-700: hsl(233, 14%, 35%);
+    --purple-800: hsl(237, 14%, 26%);
+    --gray-600: hsl(236, 9%, 61%);
+
+    /* Light Theme Colors */
+    --gray-50: hsl(0, 0%, 98%);
+    --gray-300: hsl(233, 11%, 84%);
+    --gray-600-light: hsl(235, 9%, 61%);
+    --navy-850: hsl(235, 19%, 35%);
+}
+
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-base);
+}
+
+body {
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* End Global Reset */
+
+/* Main */
+
+.heroImage {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/bg-mobile-light.jpg);
+}
+
+.heading {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+    margin: 3.13rem 2.5rem;
+}
+
+.heading h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-weight: var(--font-weight-bold);
+}
+
+.themeImage {
+    background-image: url(../images/icon-moon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+}
+
+.addTask {
+    position: relative;
+    z-index: 1;
+}
+
+.toDoList .addTask .addTaskB {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+    color: white;
+    border: solid 1px var(--blue-500);
+    cursor: pointer;
+    background: none;
+    margin-left: 0.31rem;
+}
+
+.toDoList .addTask input {
+    position: relative;
+    padding-left: 2rem;
+    margin: auto;
+    width: 20.5rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 0.75rem;
+    color: var(--gray-600-light);
+    font-weight: var(--font-weight-regular);
+}
+
+/* End Main */
+
+/* Footer */
+
+.footer {
+    position: relative;
+    margin-top: 1.25rem;
+}
+
+.allDown .tasks {
+    display: block;
+    list-style: none;
+    width: 20.5rem;
+    margin: 1.25rem auto 0;
+    border: solid 1px var(--blue-500);
+    border-radius: 0.3rem;
+    background-color: white;
+    border-bottom: none;
+}
+
+.allDown .tasks li {
+    color: var(--navy-850);
+    font-size: var(--font-size);
+    background-color: snow;
+    padding: 1rem;
+    border-radius: 5px;
+    border-bottom: solid 1px var(--blue-500);
+    text-align: left;
+}
+
+.allDown .tasks li:last-child {
+    border-bottom: none;
+}
+
+.itemsClear {
+    border-top: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border: solid 1px var(--blue-500);
+    width: 20.5rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    margin: auto;
+}
+
+.itemsClear button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--gray-600-light);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size);
+
+}
+
+.itemsClear span {
+    color: var(--gray-600-light);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size);
+}
+
+.footer .list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    border: solid 1px var(--blue-500);
+    width: 20.5rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    margin: 1.25rem auto;
+}
+
+.footer .list a {
+    text-decoration: none;
+    color: var(--gray-600-light);
+    font-weight: var(--font-weight-regular);
+    font-size: 0.87rem;
+    cursor: pointer;
+}
+
+.footer ul a:hover {
+    font-weight: var(--font-weight-bold);
+    color: var(--blue-500);
+}
+
+.drag {
+    margin: 1.87rem;
+    font-size: 0.87rem;
+    color: var(--gray-600-light);
+}
+
+/* End Footer */
+
+/* Attribution */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* End Attribution */
+
+/* Dark Mode Style */
+
+body.darkMode {
+    background-color: var(--navy-950);
+}
+
+body.darkMode .heroImage {
+    background-image: url(../images/bg-mobile-dark.jpg);
+}
+
+body.darkMode .themeImage {
+    background-image: url(../images/icon-sun.svg);
+}
+
+body.darkMode .toDoList .addTask input {
+    background-color: var(--navy-900);
+}
+
+body.darkMode .itemsClear {
+   background-color: var(--navy-900);
+}
+
+body.darkMode .allDown .tasks li {
+   background-color: var(--navy-900);
+   color: var(--purple-300);
+}
+
+/* End Dark Mode Style */
+
+
+/* Desktop Responsive */
+
+@media (min-width: 64em) {
+
+    /* Main */
+
+    .heroImage {
+        background-image: url(../images/bg-desktop-light.jpg);
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-around;
+        width: 35rem;
+        margin: 3.75rem auto;
+
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .themeImage {
+        height: 1.56rem;
+        width: 1.56rem;
+    }
+
+    .toDoList .addTask .addTaskB {
+        width: 1.43rem;
+        height: 1.43rem;
+        top: 30%;
+    }
+
+    .toDoList .addTask input {
+        width: 28rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+
+    /* End Main */
+
+    /* Footer */
+
+    .footer {
+        margin-top: 1.87rem;
+    }
+
+    .itemsClear {
+        width: 28rem;
+        height: 4rem;
+        gap: 12.5rem;
+    }
+
+    .itemsClear button {
+        font-size: 0.9rem;
+    }
+
+    .itemsClear span {
+        font-size: 0.9rem;
+    }
+
+    .allDown .tasks {
+        width: 28rem;
+    }
+
+    .allDown .tasks li {
+        padding: 1.4rem;
+        font-size: 1rem;
+    }
+
+    .footer .list {
+        border: none;
+        margin: -3.43rem auto;
+        padding-right: 1.25rem;
+    }
+
+    .footer .list a {
+        font-size: 0.9rem;
+    }
+
+    .drag {
+        margin: 6.25rem 0 2.5rem 0;
+    }
+    /* End Footer */
+
+    /* Attribution */
+
+    .attribution {
+        font-size: 1rem;
+    }
+    /* End Attribution */
+
+    /* Dark Mode */
+
+    body.darkMode .heroImage {
+        background-image: url(../images/bg-desktop-dark.jpg);
+    }
+    /* End Dark Mode */
+
+}
+
+/* End Desktop Responsive */
+
+/***<<<<< Js Classes >>>>>***/
+
+/* complete task li */
+
+.checked {
+    color: var(--gray-300) !important;
+    text-decoration: line-through;
+}
+
+.check.checked {  
+    background: var(--check-gradient) ;
+}
+
+.check.checked::after {  
+    content: url(../images/icon-check.svg);
+}
+/* delete li */
+
+.delete-icon {
+    float: right;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+/* btn Check li */
+
+.check {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    border: solid 1px var(--blue-500);
+    cursor: pointer;
+    background: none;
+    margin-right: 0.63rem;
+    float: left;
+    background: transparent;
+}
+
+/***<<<<< End Js Classes >>>>>***/

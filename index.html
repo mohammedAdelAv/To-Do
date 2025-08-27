@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Todo app</title>
+
+  <!--Link Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Link main Css-->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- link Font Awesome -->
+  <link rel="stylesheet" href="./webFonts/css/all.min.css">
+
+</head>
+
+<body>
+  
+  <main class="ToDo">
+
+    <div class="container">
+
+      <div class="heroImage"></div>
+
+      <div class="heading">
+        <h1>T O D O</h1>
+        <div id="toggle" class="themeImage"></div>
+      </div>
+
+      <div class="toDoList">
+
+        <div class="addTask">
+          <button class="addTaskB"></button>
+          <input id="Create" type="text" placeholder="Create a new todo..." />
+        </div>
+
+        <div class="footer">
+
+          <div class="allDown">
+            <ul class="tasks">
+
+            </ul>
+            <div class="itemsClear">
+              <span>  items left</span>
+              <button class="clearCompleted">Clear Completed</button>
+            </div>
+
+            <ul class="list">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Active</a></li>
+              <li><a href="#">Completed</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="drag">Drag and drop to reorder list</div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Muhamed Adel</a>.
+  </footer>
+
+  <!-- Link main Js-->
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
