@@ -56,7 +56,7 @@ function addTodo () {
         let li = document.createElement("li");
 
         let img = document.createElement("img");
-        img.src = "../images/icon-cross.svg";
+        img.src = "images/icon-cross.svg";
         img.alt = "delete"
         img.classList.add("delete-icon");
 
