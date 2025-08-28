@@ -74,7 +74,7 @@ body {
     display: flex;
     justify-content: space-around;
     gap: 10rem;
-    margin: 3.13rem 2.5rem;
+    margin: 3.13rem 1rem;
 }
 
 .heading h1 {
@@ -224,6 +224,10 @@ body {
 /* Attribution */
 
 .attribution {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 11px;
     text-align: center;
 }
